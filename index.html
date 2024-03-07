@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css/reset.css"/>
+  </head>
+
+  <body>
+    <header>
+      <img src="safe_secure_security_password_roomlocker_door_lock_padlock_safety_icon_218691.png" class="logo" alt="Logo del encriptador" />
+    </header>
+
+    <main>
+      <section>
+        <textarea
+          id="inputMensaje"
+          oninput="validarInput(this)"
+          placeholder="Inserte su mensaje aquí"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div>
+          <p class="advertencia">
+            <img class="alert" src="alert_21476.png"></img> No se aceptan mayúsculas ni símbolos especiales.
+          </p>
+        </div>
+        <div class="botones">
+          <button class="a" onclick="Encriptar()" id="botonEncriptar">Encriptar</button>
+          <button class="b" onclick="Desencriptar()" id="botonDesencriptar">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <textarea
+          id="resultado"
+          placeholder="Ningun mensaje fue encontrado."
+          cols="20"
+          rows="12"
+          readonly
+        ></textarea>
+        <!-- readonly sirve para especificar que es un area no editable, es decir que solo esta en modo lectura-->
+
+        <div>
+          <button class="c" onclick="copiarTexto()" id="copiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="carla">© Todos los derechos reservados - Caro Carla - Challenge</p>
+    </footer>
+  </body>
+
+  <script src="funciones.js"></script>
+</html>

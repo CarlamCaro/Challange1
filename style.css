@@ -1,0 +1,160 @@
+* {
+  background: #eff1fa;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.logo {
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 4%;
+}
+
+.alert {
+  display: inline;
+  width: 5%;
+  margin-bottom: -5px;
+}
+
+main {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+
+#inputMensaje {
+  border: none;
+  color: #757fb2;
+  margin-top: 50px;
+  text-transform: lowercase;
+  resize: none;
+  height: 50vh;
+}
+
+::placeholder {
+  color: #757fb2;
+  display: flex;
+  top: 619px;
+  left: 1032px;
+}
+
+#inputMensaje:focus {
+  outline: none;
+}
+
+/* en estas lineas desaparece todo el borde del texto cuando esta seleccionada la textarea (con el focus) y los "::" para citar al placeholder y darle color y diseño al contenido del mismo */
+
+#resultado {
+  background: white;
+  border: none;
+  border-radius: 24px;
+  color: #757fb2;
+  margin-left: 90px;
+  margin-top: 50px;
+  padding-left: 20px;
+  position: static;
+  resize: none;
+  height: 53vh;
+}
+
+#resultado:focus {
+  outline: none;
+}
+
+.muñeco {
+  display: flex;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.botones {
+  display: flex;
+  margin-top: 9px;
+  gap: 20px;
+}
+
+#botonEncriptar {
+  background-color: #757fb2;
+  border: 1px solid #757fb2;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  /*la op cursor me permite elegir la interaccion del cursor al pasar por esa area*/
+  height: 67px;
+  width: 328px;
+}
+
+#botonEncriptar:hover {
+  color: rgb(0, 0, 0);
+  background-color: #c8cff3;
+}
+
+.a:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+#botonDesencriptar {
+  background-color: #d8dfe8;
+  border: 1px solid #757fb2;
+  border-radius: 24px;
+  color: #757fb2;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+#botonDesencriptar:hover {
+  background-color: #757fb2;
+  color: white;
+}
+
+.b:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+#copiar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #757fb2;
+  border-radius: 24px;
+  color: #757fb2;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 108px;
+  margin-top: 40px;
+  width: 328px;
+}
+
+#copiar:hover {
+  color: rgb(255, 255, 255);
+}
+
+.c:hover {
+  background-color: #757fb2;
+  transform: scale(
+    1.1,
+    1.1
+  ); /* Aumenta el tamaño un 20% en ambos ejes /
+     / Aplica transición suave de 0.5 segundos */
+  transition: transform 0.5s ease-in-out;
+}
+
+.advertencia {
+  color: dimgray;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carla {
+  text-align: center;
+  color: #757fb2;
+}
+.carla:hover {
+  color: blueviolet;
+}
